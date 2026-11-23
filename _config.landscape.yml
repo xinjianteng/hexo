@@ -1,0 +1,20 @@
+# hexo-theme-landscape 主题配置覆盖
+# 键名与默认值见 node_modules/hexo-theme-landscape/_config.yml；
+# 本文件只写与默认值不同的键，其余全部走主题默认值。
+
+# Header
+# 关闭 RSS 入口：本仓库未安装 hexo-generator-feed，默认 /atom.xml 是 404 断链；
+# 置空后 header.ejs 与 head.ejs 中的 if(theme.rss) 均为假，页头 RSS 图标与 <head> 里的 feed 链接一并消失。
+rss: ''
+
+# Content
+# 摘要按钮中文化（默认 Read More），仅当文章含 <!-- more --> 摘要分隔符时显示。
+excerpt_link: 阅读全文
+
+# —— 以下键为个人/可选配置，待用户按需填写，未填写前保持主题默认值（均为注释占位）——
+# favicon: /favicon.png
+# copyright:                # 页脚版权区，支持 HTML，写法见主题默认 _config.yml 中的注释示例
+# twitter:
+# google_analytics:
+# valine:                   # 评论系统，结构见主题默认 _config.yml（enable/appId/appKey 等，需整块填写）
+# menu:                     # 导航菜单，需加 About 页时如：menu: {Home: /, Archives: /archives, About: /about}
